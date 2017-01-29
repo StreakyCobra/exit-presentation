@@ -46,6 +46,10 @@
              background-color:rgba(0, 0, 0, 0.5) !important;
          }
 
+         .whitebg {
+             background-color:rgba(255, 255, 255, 1) !important;
+         }
+
          .simple-image {
              border: none !important;
              background: none !important;
@@ -106,11 +110,11 @@
                 <section>
 
                     <section id="about-me" data-background="#42affa">
-                        <h2>About me</h2>
+                        <h1>About me</h1>
                     </section>
 
                     <section>
-                        <h3>Background</h3>
+                        <h2>Background</h2>
                         <ul>
                             <li><span class="fragment highlight-current-red">Apprenticeship</span> in Techinal Drawing, 2006</li>
                             <li>Bachelor in <span class="fragment highlight-current-red">Business Informatics</span>, 2010, HES-SO</li>
@@ -120,7 +124,7 @@
                     </section>
 
                     <section>
-                        <h3>Interests</h3>
+                        <h2>Interests</h2>
                         <h4 class="blue">Tech</h4>
                         <p>
                             Programming / Linux / Open Source &nbsp;<a href="https://github.com/StreakyCobra/" target="_blank"><i class="fa fa-github"></i></a><br/>
@@ -135,8 +139,8 @@
                     </section>
 
                     <section>
-                        <h3>PhD</h3>
-                        <img src="images/timeline.svg" />
+                        <h2>PhD</h2>
+                        <img class="simple-image" src="images/timeline.svg" />
                         <h4 class="blue">Topics</h4>
                         <p>Machine Learning applied to Healthcare</p>
                         </ul>
@@ -147,11 +151,11 @@
                 <section>
 
                     <section id="aislab-research-group" data-background="#8bf996">
-                        <h2>AISLab Research Group</h2>
+                        <h1>AISLab Research Group</h1>
                     </section>
 
                     <section data-background-image="images/zermatt-1600.jpg">
-                        <h3>Location</h3>
+                        <h2>Location</h2>
                         <p style="font-weight: bold; font-size: 0.5em; color: white;">Photo credit: Jean Revillard</p>
                     </section>
 
@@ -164,25 +168,37 @@
                     </section>
 
                     <section>
-                        <h3>Structure</h3>
-                        <p>HES-SO (Swiss University of Applied Sciences)</p>
-                        <p><i class="fa fa-chevron-down"></i></p>
+                        <h2><i class="fa fa-sitemap"></i> Organization</h2>
+                        <p>HES (Swiss University of Applied Sciences)</p>
+                        <p><i class="fa fa-ellipsis-v"></i></p>
                         <p>Institute of Business Informatics</p>
                         <p><i class="fa fa-chevron-down"></i></p>
-                        <p>eHealth Unit</p>
-                        <p><i class="fa fa-chevron-down"></i></p>
-                        <p>AISLab</p>
+                        <div style="border-top: solid 1px white;">
+                            <div style="float: left; width: 45%;">
+                                <p class="red">eHealth Unit</p>
+                                <p><i class="fa fa-chevron-down"></i></p>
+                                <p class="red">AISLab</p>
+                            </div>
+                            <div style="float: left; width: 10%;">
+                                <p><i class="fa fa-ellipsis-h"></i></p>
+                                <p><i class="fa fa-chevron-down"></i></p>
+                            </div>
+                            <div style="float: right; width: 45%;">
+                                <p>eEnergy Unit</p>
+                                <p><i class="fa fa-chevron-down"></i></p>
+                            </div>
+                        </div>
                     </section>
 
                     <section>
                         <h2>eHealth Unit</h2>
                         <div class="clearfix">
-                            <div style="float: right; width: 50%;">
+                            <div style="float: left; width: 50%;">
                                 <p>AISLab</p>
                                 <img class="simple-image" src="images/aislab.png" />
                             </div>
-                            <div style="float: left; width: 50%;">
-                                <p>MEDGift</p>
+                            <div style="float: right; width: 50%;">
+                                <p>MedGIFT</p>
                                 <img class="simple-image" src="images/medgift.png" />
                             </div>
                         </div>
@@ -190,7 +206,25 @@
                     </section>
 
                     <section data-background-image="images/aislab_group.jpg">
-                        <h2>AISLab Group</h2>
+                        <h2>AISLab</h2>
+                        <div class="fragment fade-up clearfix" style="background-color: rgba(0, 0, 0, 0.8); padding-top: 0.5em;">
+                            <div style="float: left; width: 50%;">
+                                <img class="simple-image" src="images/aislab_position.svg" \>
+                            </div>
+                            <div style="float: right; width: 50%; font-size: 0.7em;">
+                                <p>
+                                    <h3>Projects</h3>
+                                    <ul>
+                                        <li>Type 1 diabetes</li>
+                                        <li>Electronic Health Record Anonymisation</li>
+                                        <li>Gestational diabetes</li>
+                                        <li>Chronic Obstructive Pulmonary Disease (COPD)</li>
+                                        <li>Therapeutic drug monitoring</li>
+                                        <li>…</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
                     </section>
 
                 </section>
@@ -198,37 +232,213 @@
                 <section>
 
                     <section id="research-topics" data-background="#f98b8b">
-                        <h2>Research Topics</h2>
+                        <h1>Research Topics</h1>
                     </section>
 
                     <section>
-                        <h3>D1NAMO</h3>
+                        <h2 class="blue">D1NAMO</h2>
+
+                        <p><span class="red">D</span>iabetes type <span class="red">1</span> <span class="red">N</span>on-invasive <span class="red">A</span>ctivity <span class="red">MO</span>nitoring</p>
+                        <hr />
+
+                        <table style="font-size: 0.8em;" class="fragment fade-down">
+                            <tr>
+                                <td>May 2014</td>
+                                <td>Project started</td>
+                            </tr>
+                            <tr>
+                                <td>April 2015</td>
+                                <td>Ethical committee approval (70 pages)</td>
+                            </tr>
+                            <tr>
+                                <td>May 2015</td>
+                                <td>Data acquisition started<br/>Platform developed</td>
+                            </tr>
+                            <tr>
+                                <td>November 2016</td>
+                                <td>Project finished</td>
+                            </tr>
+                        </table>
+                    </section>
+
+                    <section>
+                        <h3>Goals</h3>
                         <ul>
-                            <li>TODO</li>
+                            <li class="fragment highlight-current-red">Monitoring glucose requires taking drops of blood.</li>
+                            <li class="fragment highlight-current-red">Predict glucose levels from a non-invasive sensor.</li>
+                            <li class="fragment highlight-current-red">Improve the quality of life of type 1 diabetic patients.</li>
+                            <li class="fragment highlight-current-red">Avoid hypoglycemia to increase life expectancy.</li>
                         </ul>
                     </section>
 
                     <section>
+                        <h3>Sensor</h3>
+                        <img src="images/belt.png" style="width:50%;" />
+                        <p>Zephy BioHarness 3</p>
+                    </section>
+
+                    <section>
+                        <h3>Signals</h3>
+                        <div class="clearfix">
+                            <div style="float: left; width: 33%; font-size: 0.7em;">
+                                <img style="float:left;" class="whitebg" src="images/acc.png" />
+                                <p>Accelerometers</p>
+                            </div>
+                            <div style="float: left; width: 33%; font-size: 0.7em;">
+                                <img style="float:left;" class="whitebg" src="images/breathing.png" />
+                                <p>Breathing</p>
+                            </div>
+                            <div style="float: left; width: 33%; font-size: 0.7em;">
+                                <img style="float:left;" class="whitebg" src="images/ecg.png" />
+                                <p>ECG</p>
+                            </div>
+                        </div>
+                        <div class="fragment drop-down">
+                        <i class="red fa fa-chevron-down"></i>
+                        <p>Is it possible to detect hypoglycemia?</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h3>Datbases</h3>
+                        <div style="float: left; width: 45%; font-size: 0.7em;">
+                            Healthy people
+                            <hr />
+                            <ul>
+                                <li><span class="blue">20</span> patients</li>
+                                <li>~<span class="blue">1100</span> hours of signals</li>
+                                <li><span class="blue">470</span> glucose measurements</li>
+                                <li><span class=blue>458</span> food annotations</li>
+                                <li><span class=blue>315</span> food pictures</li>
+                            </ul>
+                        </div>
+                        <div style="float: right; width: 45%; font-size: 0.7em;">
+                            Diabetic patients
+                            <hr />
+                            <ul>
+                                <li><span class="blue">7</span> patients</li>
+                                <li>~<span class="blue">355</span> hours of signals</li>
+                                <li><span class="blue">6660</span> glucose measurements</li>
+                                <li><span class=blue>100</span> food annotations</li>
+                                <li><span class=blue>69</span> food pictures</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h3>Results</h3>
+                        <div>
+                            <div style="float: left; width: 50%; font-size: 0.7em;">
+                                <img class="whitebg" src="images/ranvierdetection.png" style="width: 50%;"/>
+                            </div>
+                            <div style="float: right; width: 50%; font-size: 0.7em; text-align: left;">
+                                <p>
+                                <div>Ranvier, J.-E.; Calbimonte, J.-P.; Dubosson, F. & Aberer, K.</div>
+                                <div class="blue">Detection of Hypoglycemic Events through Wearable Sensors</div>
+                                <div style="font-size: 0.8em;"><i>Proceedings of the 1st Workshop on Semantic Web Technologies for Mobile and Pervasive Environments co-located with the 13th Extended Semantic Web Conference (ESWC 2016), Heraklion, Greece, May 29, 2016., 2016 , 21-26</i></div>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h3>Results</h3>
+                        <div>
+                            <div style="float: left; width: 50%; font-size: 0.7em;">
+                                <img class="whitebg" src="images/ranvierd1namo.png" style="width: 50%;"/>
+                            </div>
+                            <div style="float: right; width: 50%; font-size: 0.7em; text-align: left;">
+                                <p>
+                                    <div>Ranvier, J.-E.; Calbimonte, J.-P.; Dubosson, F. & Aberer, K.</div>
+                                    <div class="blue">Non-invasive Detection of Hypoglycemia for Type 1 Diabetic Patients.</div>
+                                    <div style="font-size: 0.8em;"><i><span class="red">Submitted</span> to «Computer in Biology and Medicine»</i></div>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h3>Results</h3>
+                        <div>
+                            <div style="float: left; width: 50%; font-size: 0.7em;">
+                                <img class="whitebg" src="images/dubossond1namo.png" style="width: 50%;"/>
+                            </div>
+                            <div style="float: right; width: 50%; font-size: 0.7em; text-align: left;">
+                                <p>
+                                    <div>Dubosson, F.; Bromuri, S.; Ranvier, J.-E. & Schumacher, M.</div>
+                                    <div class="blue">D1NAMO, A Personal Health System for Glycemic Events Detection</div>
+                                    <div style="font-size: 0.8em;"><i>Workshop Artificial Intelligence for Diabetes, 22nd European Conference on Artificial Intelligence (ECAI 2016), 2016</i></div>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h3>Results</h3>
+                        <div>
+                            <div style="float: left; width: 50%; font-size: 0.7em;">
+                                <img class="whitebg" src="images/dubossonaiim.png" style="width: 50%;"/>
+                            </div>
+                            <div style="float: right; width: 50%; font-size: 0.7em; text-align: left;">
+                                <p>
+                                    <div>Dubosson, F; Ranvier, J.-E.; Bromuri, S.; Calbimonte, J.-P.; Ding, S.; Ruiz, J.; Schumacher, M. & Aberer, K.</div>
+                                    <div class="blue">The open D1NAMO dataset: wearable physiological time series for type 1 diabetes management algorithms</div>
+                                    <div style="font-size: 0.8em;"><i><span class="red">Submitted</span> to the Special Issue «Artificial Intelligence for Diabetes» of «Artificial Intelligence in Medicine»</i></div>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="blue">Side activities</h2>
+                        <ul>
+                            <li>A python framework for exhaustive machine learning algorithms and features evaluations</li>
+                            <li>Neural Network</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>Python Framework</h3>
+                        <div>
+                            <div style="float: left; width: 50%; font-size: 0.7em;">
+                                <img class="whitebg" src="images/dubossonpython.png" style="width: 50%;"/>
+                            </div>
+                            <div style="float: right; width: 50%; font-size: 0.7em; text-align: left;">
+                                <p>
+                                    <div>Dubosson, F.; Bromuri, S. & Schumacher, M.</div>
+                                    <div class="blue">A Python Framework for Exhaustive Machine Learning Algorithms and Features Evaluations</div>
+                                    <div style="font-size: 0.8em;"><i>2016 IEEE 30th International Conference on Advanced Information Networking and Applications (AINA), 2016 , 987-993</i></div>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section data-fullscreen>
                         <h3>ECG Neural Network</h3>
+                        <iframe style="width: 1200px; height: 800px;" data-src="ecgnn.html"></iframe>
+                    </section>
+
+                    <section>
+                        <h2 class="blue">STSM COST Action</h2>
+                        <p>Challenges and Possible Solutions for Explainability and Interpretability of Deep Learning Models in Healthcare</p>
+                        <a class="red" href="http://www.iac.cnr.it/~tieri/projects/OOM/OpenMultiMed-STSM.htm" target="_blank"><i class="fa fa-external-link"></i> Open Multi-Scale Medicine</a>
+                    </section>
+
+                    <section>
+                        <h2 class="blue">Future</h2>
                         <ul>
-                            <li>TODO</li>
+                            <li>Common experimental work based on sharing data of the two research groups (HES-SO and UdG), each one with their own methodology.</li>
+                            <li>Intepretability and Explainability of Deep Learning Models in context of Healthcare</li>
                         </ul>
                     </section>
 
                     <section>
-                        <h3>Future</h3>
-                        <ul>
-                            <li>TODO</li>
-                        </ul>
+                        <h2>The End</h2>
+                        <p>Thanks you for your attention!</p>
+                        <p>Questions?</p>
+                        <p style="font-size: 4em;"><i class="blue fa fa-question-circle"></i></p>
                     </section>
 
-                </section>
-
-                <section>
-                    <h3>Sources</h3>
-                    <ul>
-                        <li></li>
-                    </ul>
                 </section>
 
             </div>
@@ -256,13 +466,15 @@
                  { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
                  { src: 'plugin/zoom-js/zoom.js', async: true },
                  { src: 'plugin/notes/notes.js', async: true },
-                 { src: 'bower_components/reveal.js-menu/menu.js' }
+                 { src: 'bower_components/reveal.js-menu/menu.js' },
+                 { src: 'bower_components/reveal.js-plugins/fullscreen/fullscreen.js' },
              ],
 
              menu: {
                  numbers: true,
                  markers: true,
                  hideMissingTitles: true,
+                 titleSelector: 'h1, h2',
                  custom: [
                      {title: 'Links', icon: '<i class="fa fa-external-link">', src: 'links.html'},
                  ],
